@@ -1,0 +1,158 @@
+:root {
+    --branco-principal: #ffffff;
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #167bf7;
+    --cor-de-fundo: #00030c;
+    --fonte-principal: 'Inter';
+
+
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url(imagens/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.principal {
+    text-align: center;
+}
+
+.container__caixa {
+    margin: 0 0,5rem;
+}
+
+.container__titulo {
+    font-size: 1,75rem;
+    font-weight: 700;
+
+}
+
+.container__imagem{
+    margin: 1rem 0 2rem 0;
+    width: 80%;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 0,4rem;
+    padding: 1rem;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.container a:hover {
+    background-color: burlywood;
+    color: black;
+}
+
+.botao__secundario {
+    background-color: transparent;
+    border: 0,13rem solid var(--branco-principal);
+}
+
+.container__aviso {
+    font-size: 0,75rem;
+    color: var(--cinza-secundario);
+    margin-top: 1rem;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 2rem;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--branco-principal);
+    margin-bottom: 0,1em;
+}
+
+.descricao__texto {
+    font-size: 1rem;
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1rem;
+} 
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5rem 0;
+
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dipostivos__titulo {
+    font-size: 3rem;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+}
+
+.lista__item {
+    font-size: 2rem;
+    color: var(--branco-principal);
+}
+
+.rodape__lista {
+    list-style-type: none;
+    color: var(--branco-principal);
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.lista__link__botao {
+    text-decoration: none;
+    color: var(--branco-principal);
+    list-style-type: none;
+    margin: 1rem 1rem;
+}
+
+.rodape__lista a:hover {
+    color: var(--botao-azul);
+}
+
+.rodape__texto {
+    margin: 2rem 0;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--cinza-secundario);
+}
